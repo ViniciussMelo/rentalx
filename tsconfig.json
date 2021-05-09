@@ -16,9 +16,6 @@
     "forceConsistentCasingInFileNames": true,
     "typeRoots": [
       "@types"
-    ],
-    "types": [
-      "@types/jest"
     ]
   }
 }
