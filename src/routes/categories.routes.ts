@@ -20,6 +20,8 @@ categoriesRoutes.get("/", (request, response) => {
 });
 
 categoriesRoutes.post("/import", upload.single("file"), (request, response) => {
+  console.log(request.body);
+
   return importCategoryController.handle(request, response);
 });
 
