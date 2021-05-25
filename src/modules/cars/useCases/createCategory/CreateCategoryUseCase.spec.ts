@@ -3,10 +3,10 @@ import { AppError } from "@shared/errors/AppError";
 
 import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
 
-describe("Create Category", () => {
-  let createCategoryUseCase: CreateCategoryUseCase;
-  let categoriesRepositoryInMemory: CategoriesRepositoryInMemory;
+let createCategoryUseCase: CreateCategoryUseCase;
+let categoriesRepositoryInMemory: CategoriesRepositoryInMemory;
 
+describe("Create Category", () => {
   beforeEach(() => {
     categoriesRepositoryInMemory = new CategoriesRepositoryInMemory();
     createCategoryUseCase = new CreateCategoryUseCase(
