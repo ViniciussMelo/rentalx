@@ -1,3 +1,7 @@
+import { pathsToModuleNameMapper } from "ts-jest/utils";
+
+import { compilerOptions } from "./tsconfig.json";
+
 export default {
   bail: true,
 
@@ -8,4 +12,8 @@ export default {
   preset: "ts-jest",
 
   testMatch: ["**/*.spec.ts"],
+
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: "<rootDir>/src/",
+  }),
 };
