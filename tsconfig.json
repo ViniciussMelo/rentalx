@@ -11,7 +11,8 @@
       "@modules/*": ["modules/*"],
       "@shared/*": ["shared/*"],
       "@errors/*": ["errors/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@config/*": ["config/*"]
     },
     "strict": false,
     "strictPropertyInitialization": false,
