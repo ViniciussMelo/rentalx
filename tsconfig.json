@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "baseUrl": "./src",
     "outDir": "./dist",
     "lib": [
       "es2015"
@@ -17,6 +16,9 @@
     "resolveJsonModule": true,
     "typeRoots": [
       "@types"
+    ],
+    "types": [
+      "@types/jest"
     ]
   }
 }
