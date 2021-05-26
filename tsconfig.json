@@ -4,7 +4,8 @@
     "module": "commonjs",
     "outDir": "./dist",
     "lib": [
-      "es2015"
+      "es2015",
+      "dom"
     ],
     "baseUrl": "./src",
     "paths": {
@@ -26,7 +27,7 @@
       "@types"
     ],
     "types": [
-      "@types/jest"
+      "@types/jest",
     ]
   }
 }
