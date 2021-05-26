@@ -2,13 +2,11 @@
 
 **Functional requiriments**
 Should be able register a new car.
-Should be able to list all categories.
 
 **Business rules**
 Should not be able to register a car with an existing license plate.
-Should not be able edit license plate of an already registered car.
-The car must be registered with availability.
-The user responsible for the registration must be an administrator user.
+Should be able to create a car with available true by default.
+* The user responsible for the registration must be an administrator user.
 
 # Car listing
 
