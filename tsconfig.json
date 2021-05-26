@@ -27,7 +27,7 @@
       "@types"
     ],
     "types": [
-      "@types/jest",
+      "@types/jest"
     ]
   }
 }
