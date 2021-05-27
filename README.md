@@ -33,7 +33,6 @@ The user responsible for the registration must be an administrator user.
 
 **Functional requiriments**
 Should be able to register a car image.
-Should be able to list all cars.
 
 **Non-functional requirements**
 Use multer for file upload.
