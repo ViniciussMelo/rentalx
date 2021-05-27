@@ -10,6 +10,7 @@ interface ICarsRepository {
     category_id,
     name,
   }: IListCarAvailableDTO): Promise<Car[]>;
+  findById(id: string): Promise<Car>;
 }
 
 export { ICarsRepository };

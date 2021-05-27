@@ -23,8 +23,6 @@ The user does not need to be logged in to the system.
 
 **Functional requiriments**
 Should be able register a specification to a car.
-Should be able to list all specifications.
-Should be able to list all cars.
 
 **Business rules**
 Should not be able to register a specification to a non-registered car.
