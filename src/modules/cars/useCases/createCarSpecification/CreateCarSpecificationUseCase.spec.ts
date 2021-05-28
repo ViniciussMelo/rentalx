@@ -2,9 +2,9 @@ import { CarsRepositoryInMemory } from "@modules/cars/repositories/in-memory/Car
 import { SpecificationRepositoryInMemory } from "@modules/cars/repositories/in-memory/SpecificationRepositoryInMemory";
 import { AppError } from "@shared/errors/AppError";
 
-import { CreateCarSpeciticationUseCase } from "./CreateCarSpeciticationUseCase";
+import { CreateCarSpecificationUseCase } from "./CreateCarSpecificationUseCase";
 
-let createCarSpeciticationUseCase: CreateCarSpeciticationUseCase;
+let createCarSpecificationUseCase: CreateCarSpecificationUseCase;
 let carsRepositoryInMemory: CarsRepositoryInMemory;
 let specificationsRepositoryInMemory: SpecificationRepositoryInMemory;
 
@@ -12,7 +12,7 @@ describe("Create car specification", () => {
   beforeEach(() => {
     carsRepositoryInMemory = new CarsRepositoryInMemory();
     specificationsRepositoryInMemory = new SpecificationRepositoryInMemory();
-    createCarSpeciticationUseCase = new CreateCarSpeciticationUseCase(
+    createCarSpecificationUseCase = new CreateCarSpecificationUseCase(
       carsRepositoryInMemory,
       specificationsRepositoryInMemory
     );
@@ -23,7 +23,7 @@ describe("Create car specification", () => {
       const car_id = "1234";
       const specifications_id = ["54321"];
 
-      await createCarSpeciticationUseCase.execute({
+      await createCarSpecificationUseCase.execute({
         car_id,
         specifications_id,
       });
@@ -48,7 +48,7 @@ describe("Create car specification", () => {
 
     const specifications_id = [specification.id];
 
-    const specificationsCars = await createCarSpeciticationUseCase.execute({
+    const specificationsCars = await createCarSpecificationUseCase.execute({
       car_id: car.id,
       specifications_id,
     });
