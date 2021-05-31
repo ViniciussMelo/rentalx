@@ -51,3 +51,16 @@
 * Should not be able to register a new rental if there is already an open rental for the same user.
 * Should not be able to register a new rental if there is already an open rental for the same car.
 * The user should be logged in to the application.
+
+# Car rental return
+
+**Functional requirements**
+* Should be able to return a car.
+
+**Business rules**
+* If the car is returned in less than 24 hours, it will be charged full night.
+* When making the return, the car must be released for another rental.
+* When returning, the user must be released for another rental.
+* When returning, the total rent must be calculated.
+* If the return time exceeds the expected delivery time, a fine will be charged proportional to the days of delay.
+* If there is a traffic ticket, it must be added to the total rental.
