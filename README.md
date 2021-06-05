@@ -51,6 +51,7 @@
 * Should not be able to register a new rental if there is already an open rental for the same user.
 * Should not be able to register a new rental if there is already an open rental for the same car.
 * The user should be logged in to the application.
+* When making a rental, the status of the car should be changed to unavailable.
 
 # Car rental return
 
