@@ -66,3 +66,11 @@
 * If the return time exceeds the expected delivery time, a fine will be charged proportional to the days of delay.
 * If there is a traffic ticket, it must be added to the total rental.
 * The user should be logged in to the application.
+
+# User rental listing
+
+**Functional requirements**
+* Should be able to search all rentals for the user.
+
+**Business rules**
+* The user should be logged in to the application.
