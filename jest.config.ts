@@ -16,4 +16,12 @@ export default {
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
     prefix: "<rootDir>/src/",
   }),
+
+  collectCoverage: true,
+
+  collectCoverageFrom: ["<rootDir>/src/modules/**/useCases/**/*.ts"],
+
+  coverageDirectory: "coverage",
+
+  coverageReporters: ["text-summary", "lcov"],
 };
