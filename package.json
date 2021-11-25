@@ -7,13 +7,14 @@
     "dev": "ts-node-dev -r tsconfig-paths/register --poll --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
     "test": "cross-env NODE_ENV=test jest --runInBand --detectOpenHandles",
-    "seed:admin": "ts-node-dev src/shared/infra/typeorm/seed/admin.ts"
+    "seed:admin": "ts-node-dev -r tsconfig-paths/register src/shared/infra/typeorm/seed/admin.ts"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cross-env": "^7.0.3",
     "csv-parse": "^4.15.4",
     "dayjs": "^1.10.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "handlebars": "^4.7.7",

@@ -1,4 +1,7 @@
+import dotenv from "dotenv";
 import { Connection, createConnection, getConnectionOptions } from "typeorm";
+
+dotenv.config();
 
 export default async (host = "database"): Promise<Connection> => {
   const defaultOptions = await getConnectionOptions();
