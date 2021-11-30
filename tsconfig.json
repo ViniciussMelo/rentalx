@@ -28,6 +28,7 @@
     ],
     "types": [
       "@types/jest"
-    ]
+    ],
+    "sourceMap": true
   }
 }
