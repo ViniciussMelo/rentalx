@@ -9,7 +9,7 @@ export default async (host = "database"): Promise<Connection> => {
 
   return createConnection(
     Object.assign(defaultOptions, {
-      host: isTest ? "localhost" : host,
+      // host: isTest ? "localhost" : host,
       database: isTest ? "rentalx_test" : defaultOptions.database,
     })
   );
