@@ -1,0 +1,13 @@
+{
+  "type": "db_type",
+  "port": 0,
+  "host": "host",
+  "username": "db_username",
+  "password": "db_password",
+  "database": "db_name", 
+  "migrations": ["migration_directory"],
+  "entities": ["entities_directory"],
+  "cli": {
+    "migrationsDir": "migrationsDir_directory"
+  }
+}

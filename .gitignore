@@ -105,3 +105,6 @@ dist
 
 # SQLite file
 *.sqlite
+
+# ORM config
+ormconfig.json
