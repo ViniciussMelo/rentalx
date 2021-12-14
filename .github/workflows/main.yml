@@ -35,4 +35,3 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           source: "., !node_modules"
           target: "test"
-          target: "test"
