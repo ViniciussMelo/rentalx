@@ -27,7 +27,8 @@
       "@types"
     ],
     "types": [
-      "@types/jest"
+      "@types/jest",
+      "node"
     ],
     "sourceMap": true
   }
